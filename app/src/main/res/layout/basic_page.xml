@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="2dp"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/theicon"
+        android:src="@mipmap/sysu" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            style="@style/TableRowStyle" >
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/username"/>
+
+            <EditText
+                style="@style/EditViewStyle"
+                android:id="@+id/userName"
+                android:hint="请输入用户名"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"/>l
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyle">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:gravity="right"
+                android:text="密码:" />
+
+            <EditText
+                style="@style/EditViewStyle"
+                android:id="@+id/password"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:id="@+id/student"
+            android:checked="true"
+            android:text="学生" />
+
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:id="@+id/teacher"
+            android:text="老师"/>
+
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:id="@+id/society"
+            android:text="社团"/>
+
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:id="@+id/manager"
+            android:text="管理者"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/myshape"
+            android:id="@+id/Login"
+            android:text="登录"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/myshape"
+            android:id="@+id/Register"
+            android:text="注册"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </TableRow>
+</LinearLayout>

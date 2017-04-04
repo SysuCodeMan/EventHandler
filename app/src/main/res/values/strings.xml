@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Experiment2</string>
+    <string name="heading">中山大学课外体育积分电子认证系统</string>
+    <string name="theicon">TheIcon</string>
+    <string name="TheHint">请输入用户名</string>
+    <string name="username">用户名:</string>
+
+</resources>
